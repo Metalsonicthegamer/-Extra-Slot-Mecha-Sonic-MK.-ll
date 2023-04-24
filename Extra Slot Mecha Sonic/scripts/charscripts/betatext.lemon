@@ -1,0 +1,9 @@
+//# address-hook(0x01aada) end(0x01ab18)
+function void UpdateGameObjects()
+{
+    if (global.game_mode == 0x0c && global.xtrachar == 163)
+    {
+        Renderer.drawCustomSprite("Beta_tester_bulid", getScreenWidth()-224, getScreenHeight()-24, 0, SPRITE_FLAG_PRIO, 0xffff, 0, 192)
+    }
+    base.UpdateGameObjects()
+}

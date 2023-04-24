@@ -1,0 +1,73 @@
+
+//# address-hook(0x07ca1c) end(0x07ca2c)
+function void fn07ca1c()
+{
+    if (global.xtrachar != 163)
+    {
+         base.fn07ca1c()
+         return
+    }
+    StartBossFight()
+    #if STANDALONE
+    level.boss_encounter = 3    // Usually only 0 or 1, but we're using a value of 3 here for "chooseFittingMusic"
+#endif
+
+    objA0.velocity.x = 0
+    objA0.base_state = 0x0a
+    control.player1 = 1
+    objA0.update_address = 0x063de0
+    objA0.mapping_offset = 0x14a8d6
+    objA0.sprite_attributes = (sprite_attribute.PALETTE.LINE1 | 0x04da)
+    objA0.sprite_priority = 0x0100
+    objA0.box_size.x = 0x18
+    objA0.box_size.y = 0x18
+    objA0.hitbox_extends.x = 0x09
+    objA0.hitbox_extends.y = 0x13
+   	move_area.right = move_area.left + getScreenExtend() * 2
+    objA0.render_flags = (render_flag.WORLD | render_flag.FLIP_X)
+    objA0.animation.sprite = 0xd8
+    boss.remaining_hits = 16
+    u32[A0 + 0x30] = 0x066771
+    u16[A0 + 0x44] = 0
+
+    objA0.animation.sprite = 0xda
+    objA0.countdown_value = 119
+
+    A1 = 0x0667ad
+    fn084580()
+    
+    Audio.playAudio("Megamix", AudioContext.CONTEXT_SOUND)
+	
+}
+//# address-hook(0x07ca3c) end(0x07ca4c)
+function void fn07ca3c()
+{
+if (objA0.countdown_value = 0)
+	{
+		fadePaletteToWhiteUniform()
+
+		--objA0.value39
+		if (s8[A0 + 0x39] < 0)
+		{
+			objA0.update_address = 0x07d0e0
+			objA0.value39 = 0x02
+			objA0.countdown_value = 0x1d
+		}
+	}
+    	--objA0.countdown_value
+	if (objA0.countdown_value >= 0)
+		return
+
+	global.xtrachar != 163
+
+	if (allocDynamicObjectStd())
+	{
+		// Start outro
+		objA1.update_address = 0x05e6c0
+	}
+	if (allocDynamicObjectStd())
+	{
+		objA1.update_address = 0x085ee6
+	}
+	UnloadObject()
+}

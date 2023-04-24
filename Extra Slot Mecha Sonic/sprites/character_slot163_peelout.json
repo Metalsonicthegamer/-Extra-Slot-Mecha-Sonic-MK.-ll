@@ -1,0 +1,6 @@
+{
+	"sonic_peelout_163_0":  { "File": "character_slot163_peelout.bmp", "Rect": "0,0,64,56", "Center": "25,33" },
+	"sonic_peelout_163_1":  { "File": "character_slot163_peelout.bmp", "Rect": "68,0,64,56", "Center": "25,33" },
+	"sonic_peelout_163_2":  { "File": "character_slot163_peelout.bmp", "Rect": "136,0,64,56", "Center": "25,33" },
+	"sonic_peelout_163_3":  { "File": "character_slot163_peelout.bmp", "Rect": "204,0,64,56", "Center": "25,33" }
+}

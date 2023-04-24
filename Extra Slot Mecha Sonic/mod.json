@@ -1,0 +1,65 @@
+{
+
+"Metadata":
+
+{
+
+"Name": "Extra Slot Mecha Sonic",
+
+"Author": "BluehotMess, Leay_Leo",
+
+"Description": "Adds the dreaded Mecha Sonic Mark. II without taking Sonic´s slot.",
+
+"URL": "https://sonic3air.boards.net/thread/246/extra-slot-mecha-sonic-mk",
+
+"ModVersion": "4.0",
+
+"GameVersion": "20.03.22.0"
+
+},
+"Settings":
+	{
+		"Group1":
+		[
+			{
+				"InternalName": "MechaBackdash",
+				"DisplayName": "Backdash",
+				"Variable": "MechaBackdash",
+				"DefaultValue": "1",	
+				"Category": "Movesets",			
+				"Options":
+				{
+					"0": "Off",
+					"1": "On"
+				}
+			},
+			{
+				"InternalName": "MechaAirmove",
+				"DisplayName": "Air moves",
+				"Variable": "MechaJump",
+				"DefaultValue": "1",	
+				"Category": "Movesets",			
+				"Options":
+				{
+					"0": "Triple Jump",
+					"1": "Double Air Dash(balanced)",
+					"2": "Double Air Dash(Powerful)",
+					"3": "Fatihful"
+				}
+			},
+			{
+				"InternalName": "MechaSlow",
+				"DisplayName": "Extra Slow Mecha Sonic",
+				"Variable": "MechaSlow",
+				"DefaultValue": "1",	
+				"Category": "Extras",			
+				"Options":
+				{
+					"0": "Off",
+					"1": "On"
+				}
+			}
+		]
+
+	}
+}

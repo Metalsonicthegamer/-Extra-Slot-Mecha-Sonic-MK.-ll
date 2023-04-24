@@ -1,0 +1,4 @@
+{
+	//S3C level select
+	"MechaS3C": { "File": "s3c_level.png", "Rect":"0,0,16,16"}
+}

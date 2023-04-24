@@ -1,0 +1,4 @@
+{
+	"continue_icon_slot163":    { "File": "hud_text_sprites.png", "Rect": "0,82,20,24",  "Center": "12,24" },	
+	"hud_lives_icon_slot163":    { "File": "hud_life_sprites.png", "Rect": "0,16,48,16" }
+}

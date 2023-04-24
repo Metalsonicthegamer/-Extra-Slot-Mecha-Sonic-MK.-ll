@@ -1,0 +1,13 @@
+function string ExtraChar.getCharacterName(u8 xtrachar)
+{
+    if (xtrachar == 163)
+        return "Mecha Sonic"
+    return base.ExtraChar.getCharacterName(xtrachar)
+}
+function string RenderExtraCharIcon(u8 xtrachar)
+{
+    if (xtrachar == 163)
+        return "MechaS3C"
+
+    return base.RenderExtraCharIcon(xtrachar)
+}
