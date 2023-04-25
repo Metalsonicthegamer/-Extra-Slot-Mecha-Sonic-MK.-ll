@@ -51,7 +51,7 @@
 				"InternalName": "MechaSlow",
 				"DisplayName": "Extra Slow Mecha Sonic",
 				"Variable": "MechaSlow",
-				"DefaultValue": "1",	
+				"DefaultValue": "0",	
 				"Category": "Extras",			
 				"Options":
 				{
